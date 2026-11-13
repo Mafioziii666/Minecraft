@@ -1,9 +1,32 @@
-var interactivePanels = document.querySelectorAll('.product-row, .reward-card, .news-card');
-document.addEventListener('mousemove',function(event){
-  for(var i=0;i<interactivePanels.length;i++){
-    var rectangle=interactivePanels[i].getBoundingClientRect();
-    interactivePanels[i].style.boxShadow='0 0 '+(8+Math.abs(event.clientX-rectangle.left)%16)+'px rgba(255,90,0,0.08)';
-    var currentWidth=interactivePanels[i].offsetWidth;
-    interactivePanels[i].style.backgroundPosition=(event.clientX%currentWidth)+'px '+event.clientY+'px';
+document.addEventListener('DOMContentLoaded', function () {
+  var interactivePanels = document.querySelectorAll('.product-row, .reward-card, .news-card');
+  var mouseX = 0;
+  var mouseY = 0;
+  var isTicking = false;
+  
+  function updateEffects() {
+    for (var i = 0; i < interactivePanels.length; i++) {
+      var panel = interactivePanels[i];
+      
+      var rect = panel.getBoundingClientRect();
+      
+      if (rect.bottom < 0 || rect.top > window.innerHeight) continue;
+
+      var x = mouseX - rect.left;
+      var y = mouseY - rect.top;
+      
+      panel.style.backgroundPosition = x + 'px ' + y + 'px';
+    }
+    isTicking = false;
   }
+
+  document.addEventListener('mousemove', function (event) {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+
+    if (!isTicking) {
+      window.requestAnimationFrame(updateEffects);
+      isTicking = true;
+    }
+  });
 });
