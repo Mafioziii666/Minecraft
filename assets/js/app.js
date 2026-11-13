@@ -25,7 +25,7 @@ function renderProducts() {
   var product = products[selectedCategory][selectedIndex];
   document.getElementById('preview-name').textContent = product.name;
   document.getElementById('product-name').textContent = product.name;
-  document.getElementById('preview-image').src = selectedCategory === 'cases' ? 'assets/images/chest.png' : 'assets/images/player.png';
+  document.getElementById('preview-image').src = selectedCategory === 'cases' ? 'assets/images/chest.webp' : 'assets/images/player.webp';
   var details = selectedCategory === 'ranks'
     ? '<li>Название в чате — <span>' + product.name + '</span></li><li>Оформление профиля — <span>цвет и стиль</span></li><li>Дополнительный набор — <span>предметы</span></li><li>Коллекция эффектов — <span>для персонажа</span></li>'
     : '<li>Выбранный набор — <span>' + product.name + '</span></li><li>Описание игровой коллекции</li><li>Содержимое можно посмотреть в каталоге</li>';
