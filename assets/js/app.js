@@ -28,11 +28,22 @@ function renderProducts() {
   var product = products[selectedCategory][selectedIndex];
   
   var nickEl = document.getElementById('preview-nickname');
-  if (nickEl) {
-    nickEl.textContent = product.name;
-    nickEl.classList.add('changed');
-    setTimeout(function () { nickEl.classList.remove('changed'); }, 500);
+if (nickEl) {
+  nickEl.textContent = product.name;
+  
+  nickEl.classList.remove('rainbow', 'glow', 'emotions');
+  
+  if (product.name === 'Цветной ник') {
+    nickEl.classList.add('rainbow');
+  } else if (product.name === 'Эффект появления') {
+    nickEl.classList.add('glow');
+  } else if (product.name === 'Набор эмоций') {
+    nickEl.classList.add('emotions');
   }
+  
+  nickEl.classList.add('changed');
+  setTimeout(function () { nickEl.classList.remove('changed'); }, 500);
+}
   
   document.getElementById('product-name').textContent = product.name;
   
