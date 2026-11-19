@@ -30,10 +30,11 @@
           <div class="tabs"><div class="tab active" data-category="ranks" onclick="setCategory('ranks')">Привилегии</div><div class="tab" data-category="cases" onclick="setCategory('cases')">Кейсы</div><div class="tab" data-category="shards" onclick="setCategory('shards')">Осколки</div><div class="tab" data-category="other" onclick="setCategory('other')">Разное</div></div>
           <div class="store-body">
             <div class="store-preview">
-              <h4 id="preview-name">Маркиз</h4>
-              <img loading="lazy" alt="персонаж из игры" id="preview-image" src="assets/images/player.webp">
-              <div class="preview-nickname" id="preview-nickname">Маркиз</div>
-            </div>
+              <div class="preview-container">
+                <img loading="lazy" alt="персонаж из игры" id="preview-image" src="assets/images/player.webp">
+                <div class="preview-nickname" id="preview-nickname">Маркиз</div>
+  </div>
+</div>
             <div class="product-column"><div class="column-heading">Выбрать товар</div><div id="product-list"></div></div>
             <div class="description-column"><div class="column-heading secondary">Описание товара</div><h4 id="product-name">Маркиз</h4><div id="product-description"></div><div class="term-label">Срок действия</div><div class="terms"><span class="selected" onclick="setTerm(this,'На месяц')">На месяц</span><span onclick="setTerm(this,'Навсегда')">Навсегда</span></div><button id="choose-product" class="orange" onclick="selectProduct()">Выбрать за 39 ₽</button><p class="fineprint">Посмотреть описание выбранного набора</p></div>
           </div>
