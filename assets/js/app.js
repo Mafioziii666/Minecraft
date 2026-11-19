@@ -24,6 +24,12 @@ function renderProducts() {
   });
   var product = products[selectedCategory][selectedIndex];
   document.getElementById('preview-name').textContent = product.name;
+  var nickEl = document.getElementById('preview-nickname');
+  if (nickEl) {
+  nickEl.textContent = product.name;
+  nickEl.classList.add('changed');
+  setTimeout(function () { nickEl.classList.remove('changed'); }, 400);
+}
   document.getElementById('product-name').textContent = product.name;
   document.getElementById('preview-image').src = selectedCategory === 'cases' ? 'assets/images/chest.webp' : 'assets/images/player.webp';
   var details = selectedCategory === 'ranks'
