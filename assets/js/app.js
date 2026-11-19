@@ -28,6 +28,12 @@ function renderProducts() {
   if (nickEl) {
   nickEl.textContent = product.name;
   nickEl.classList.add('changed');
+  setTimeout(function () { nickEl.classList.remove('changed'); }, 500);
+}
+  var nickEl = document.getElementById('preview-nickname');
+  if (nickEl) {
+  nickEl.textContent = product.name;
+  nickEl.classList.add('changed');
   setTimeout(function () { nickEl.classList.remove('changed'); }, 400);
 }
   document.getElementById('product-name').textContent = product.name;
