@@ -252,6 +252,28 @@ h4 {
     margin-left: -4px;
 }
 
+.preview-nickname {
+    display: inline-block;
+    margin: 10px auto 20px;
+    padding: 4px 14px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid #ffb11a;
+    border-radius: 6px;
+    color: #ffd966;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #4a2600, 2px 2px 4px #000a;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    width: fit-content;
+}
+
+.preview-nickname.changed {
+    border-color: #fff1c4;
+    color: #fff1c4;
+}
+
 .product-column {
     width: 258px;
 }
