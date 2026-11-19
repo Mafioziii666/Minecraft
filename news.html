@@ -5,7 +5,6 @@
   <title>Новости проекта — BloodMine</title>
   <meta name="description" content="Последние события, обновления и новости Minecraft-сервера BloodMine. Узнай о новых сезонах, аренах и постройках нашего мира.">
   <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
-  <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -17,18 +16,22 @@
       </div>
       <div class="header-note">Мир твоих приключений</div>
     </div>
-    <div class="wrap inner-page"><div class="section-title"><span class="pill">Последние события</span><h1>Новости проекта</h1><p>Идеи, приключения и новые истории</p></div><div class="news-grid">
-        <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/season.webp"><div class="news-copy"><span class="eyebrow">Новый сезон</span><h4>Время начать новую историю</h4><p>Новый мир, первые постройки и большие планы. Загляни в обзор сезона.</p><a href="article.html">Подробнее</a></div></div>
-        <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/arena.webp"><div class="news-copy"><span class="eyebrow">События</span><h4>Арена ждет своих героев</h4><p>Собери команду, выбери снаряжение и узнай больше о сражениях.</p><a href="article-arena.html">Подробнее</a></div></div>
-        <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/world.webp"><div class="news-copy"><span class="eyebrow">Мир BloodMine</span><h4>Построй что-нибудь свое</h4><p>От маленького дома до крепости. Все начинается с первого блока.</p><a href="article-build.html">Подробнее</a></div></div>
-      </div><div class="news-wide"><img loading="lazy" alt="персонаж из игры" src="assets/images/hero-secondary.webp"><div><span class="eyebrow">Присоединяйся к приключению</span><h4>Твоя следующая история</h4><p>Начни с первого блока, познакомься с миром и поставь свою собственную цель.</p><a href="how-to-play.html">Подробнее</a></div></div><a class="text-link" href="archive.html">Смотреть прошлые обновления →</a></div>
+
+    <main>
+      <div class="wrap inner-page"><div class="section-title"><span class="pill">Последние события</span><h1>Новости проекта</h1><p>Идеи, приключения и новые истории</p></div><div class="news-grid">
+          <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/season.webp"><div class="news-copy"><span class="eyebrow">Новый сезон</span><h4>Время начать новую историю</h4><p>Новый мир, первые постройки и большие планы. Загляни в обзор сезона.</p><a href="article.html">Подробнее</a></div></div>
+          <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/arena.webp"><div class="news-copy"><span class="eyebrow">События</span><h4>Арена ждет своих героев</h4><p>Собери команду, выбери снаряжение и узнай больше о сражениях.</p><a href="article-arena.html">Подробнее</a></div></div>
+          <div class="news-card"><img loading="lazy" alt="небольшой полегон из игры" src="assets/images/world.webp"><div class="news-copy"><span class="eyebrow">Мир BloodMine</span><h4>Построй что-нибудь свое</h4><p>От маленького дома до крепости. Все начинается с первого блока.</p><a href="article-build.html">Подробнее</a></div></div>
+        </div><div class="news-wide"><img loading="lazy" alt="персонаж из игры" src="assets/images/hero-secondary.webp"><div><span class="eyebrow">Присоединяйся к приключению</span><h4>Твоя следующая история</h4><p>Начни с первого блока, познакомься с миром и поставь свою собственную цель.</p><a href="how-to-play.html">Подробнее</a></div></div><a class="text-link" href="archive.html">Смотреть прошлые обновления →</a></div>
+    </main>
+
     <div class="footer wrap">
       <a class="logo small-logo" href="index.html">BM</a>
       <div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a><a href="archive.html">Еще</a></div>
       <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
       <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
     </div>
-    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h1 id="dialog-title">Информация</h1><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
+    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
     <div class="toast" id="toast"></div>
     <script src="assets/js/app.js"></script><script src="assets/js/effects.js"></script>
 </body>
