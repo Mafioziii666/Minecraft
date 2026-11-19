@@ -252,7 +252,6 @@ h4 {
     margin-left: -4px;
 }
 
-/* Контейнер для картинки и ника */
 .preview-container {
     position: relative;
     width: 175px;
@@ -269,7 +268,7 @@ h4 {
 
 .preview-nickname {
     position: absolute;
-    top: 10px; 
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.7);
@@ -283,7 +282,42 @@ h4 {
     text-shadow: 1px 1px 0 #4a2600, 2px 2px 4px #000a;
     padding: 3px 10px;
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+}
+
+.preview-nickname.rainbow {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    border-color: #fff;
+    animation: rainbow-shift 3s linear infinite;
+}
+
+@keyframes rainbow-shift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+.preview-nickname.glow {
+    color: #00ffff;
+    border-color: #00ffff;
+    animation: glow-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+    from { box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
+    to { box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, inset 0 0 10px #00ffff; }
+}
+
+.preview-nickname.emotions::before {
+    content: "😊 ";
+    margin-right: 5px;
+}
+.preview-nickname.emotions::after {
+    content: " 🚀";
+    margin-left: 5px;
 }
 
 .preview-nickname.changed {
