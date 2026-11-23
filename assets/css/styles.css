@@ -987,6 +987,7 @@ button:focus:not(:focus-visible) {
         text-align: center;
         min-height: auto;
         padding: 20px 0;
+        position: static;
     }
     
     .hero-copy {
@@ -995,7 +996,7 @@ button:focus:not(:focus-visible) {
     }
     
     .hero-copy h1 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1.1;
         margin: 15px 0;
     }
@@ -1017,30 +1018,34 @@ button:focus:not(:focus-visible) {
     }
     
     .hero-players {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 20px auto 0 !important;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
     }
     
     .hero-players img {
-        position: static;
-        width: 45%;
-        max-width: 200px;
-        height: auto;
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        width: auto !important;
+        height: 200px !important;
+        max-width: 45% !important;
         display: inline-block;
-        vertical-align: bottom;
-        margin: 0 5px;
     }
     
     .hero-back, .hero-front {
-        position: static;
-        left: auto;
-        top: auto;
-        height: auto;
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        height: 200px !important;
     }
     
     .section-title h2 {
@@ -1069,7 +1074,6 @@ button:focus:not(:focus-visible) {
         max-width: none;
     }
     
-    /* Сетки */
     .news-grid,
     .rewards-grid {
         grid-template-columns: 1fr;
@@ -1169,6 +1173,6 @@ button:focus:not(:focus-visible) {
     }
     
     .hero-players img {
-        width: 42%;
+        height: 160px !important;
     }
 }
