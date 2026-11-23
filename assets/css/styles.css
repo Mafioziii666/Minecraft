@@ -963,14 +963,14 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 768px) {
     .wrap {
-        padding: 0 20px;
+        padding: 0 24px;
     }
 
     .header {
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px 20px;
+        padding: 15px 24px;
         gap: 15px;
     }
 
@@ -1005,6 +1005,7 @@ button:focus:not(:focus-visible) {
 
     .hero-copy {
         max-width: 100%;
+        padding: 0 4px;
     }
 
     .hero-copy h1 {
@@ -1067,7 +1068,7 @@ button:focus:not(:focus-visible) {
     }
 
     .inner-page {
-        padding: 15px 20px 55px;
+        padding: 15px 24px 55px;
     }
 
     .store {
@@ -1168,11 +1169,11 @@ button:focus:not(:focus-visible) {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
-        padding: 40px 20px 30px;
+        padding: 40px 24px 30px;
     }
 
     .article-page {
-        padding: 20px 20px;
+        padding: 20px 24px;
     }
 
     .article-page h1,
@@ -1192,23 +1193,23 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 390px) {
     .wrap {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .header {
-        padding: 15px;
+        padding: 15px 20px;
     }
 
     .inner-page {
-        padding: 15px 15px 55px;
+        padding: 15px 20px 55px;
     }
 
     .footer {
-        padding: 40px 15px 30px;
+        padding: 40px 20px 30px;
     }
 
     .article-page {
-        padding: 20px 15px;
+        padding: 20px 20px;
     }
 
     .hero-copy h1 {
