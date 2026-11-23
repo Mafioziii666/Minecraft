@@ -102,3 +102,11 @@ renderProducts();
 document.getElementById('dialog').addEventListener('click',function(event){
   if(event.target===this)closeDialog();
 });
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    var dialog = document.getElementById('dialog');
+    if (dialog && dialog.classList.contains('visible')) {
+      closeDialog();
+    }
+  }
+});
