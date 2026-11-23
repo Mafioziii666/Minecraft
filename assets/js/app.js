@@ -66,10 +66,17 @@ function setCategory(category) {
   renderProducts();
 }
 
-function setTerm(element,term) {
+function setTerm(element, term) {
   selectedTerm = term;
   document.querySelectorAll('.terms span').forEach(function(item){item.className='';});
-  element.className='selected';
+  element.className = 'selected';
+
+  var product = products[selectedCategory][selectedIndex];
+  var finalPrice = product.price;
+  if (term === 'Навсегда') {
+    finalPrice = product.price * 5;
+  }
+  document.getElementById('choose-product').textContent = 'Выбрать за ' + finalPrice + ' ₽';
 }
 
 function openDialog(title,text) {
