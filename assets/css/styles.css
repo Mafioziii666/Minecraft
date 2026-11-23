@@ -6,6 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     margin: 0;
     color: #fff5e8;
@@ -962,51 +967,61 @@ button:focus:not(:focus-visible) {
         flex-direction: column;
         align-items: flex-start;
         padding: 15px 0;
+        gap: 15px;
     }
-    
+
+    .logo {
+        font-size: 38px;
+    }
+
     .nav {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
+        padding: 6px;
     }
-    
+
     .nav a {
         font-size: 11px;
         padding: 8px 10px;
+        flex: 1 1 auto;
+        text-align: center;
     }
-    
+
     .header-note {
         display: none;
     }
-    
+
     .hero {
         flex-direction: column;
         align-items: flex-start;
         min-height: auto;
         padding: 20px 0;
     }
-    
+
     .hero-copy {
         max-width: 100%;
     }
-    
+
     .hero-copy h1 {
         font-size: 28px;
         line-height: 1.1;
     }
-    
+
     .hero p {
         max-width: 100%;
     }
-    
+
     .hero-button {
         width: 100%;
+        max-width: 100%;
     }
-    
+
     .hero-button span {
         margin-left: 0;
         float: right;
     }
-    
+
     .hero-players {
         position: relative;
         left: 0;
@@ -1016,100 +1031,116 @@ button:focus:not(:focus-visible) {
         margin-top: 20px;
         text-align: center;
     }
-    
+
     .hero-players img {
-        position: relative;
-        width: 80%;
+        position: static;
+        width: 45%;
         height: auto;
         display: inline-block;
+        vertical-align: bottom;
     }
-    
-    .hero-back, .hero-front {
+
+    .hero-back,
+    .hero-front {
         position: static;
         left: auto;
         top: auto;
         height: auto;
         margin: 0 5px;
     }
-    
+
+    .section-title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
     .section-title h2 {
         font-size: 24px;
     }
-    
+
+    .section-title p {
+        font-size: 12px;
+    }
+
     .inner-page {
         padding: 15px 16px 55px;
     }
-    
+
+    .store {
+        width: 100%;
+        padding: 12px;
+    }
+
     .store-body {
         flex-direction: column;
     }
-    
+
     .store-preview,
     .product-column,
     .description-column {
         width: 100%;
         flex: none;
     }
-    
+
     .description-column .orange {
         width: 100%;
         max-width: none;
     }
-    
+
     .news-grid,
     .rewards-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .news-wide {
         flex-direction: column;
         padding: 20px;
         gap: 20px;
     }
-    
+
     .reward-banner {
         padding: 20px;
         flex-direction: column;
         text-align: center;
     }
-    
+
     .guide-layout {
         flex-direction: column;
     }
-    
+
     .guide-steps {
         width: 100%;
         flex: none;
     }
-    
+
     .guide-player {
         max-width: 200px;
         margin: 0 auto;
     }
-    
+
     .footer {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
     }
-    
+
     .article-page {
         padding: 20px 16px;
     }
-    
+
     .article-page h1,
     .article-page h2 {
         font-size: 24px;
     }
-    
+
     .article-body {
         font-size: 14px;
     }
-    
+
     .article-body h4 {
         font-size: 18px;
     }
-    
+
     .rules-intro,
     .rules-list,
     .bottom-help {
@@ -1121,25 +1152,25 @@ button:focus:not(:focus-visible) {
     .hero-copy h1 {
         font-size: 24px;
     }
-    
+
     .store-preview img {
         max-width: 140px;
     }
-    
+
     .preview-container {
         width: 100%;
         max-width: 160px;
     }
-    
+
     .preview-nickname {
         font-size: 12px;
         padding: 2px 8px;
     }
-    
+
     .tabs {
         gap: 4px;
     }
-    
+
     .tab {
         padding: 6px 10px;
         font-size: 11px;
