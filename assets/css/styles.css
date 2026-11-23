@@ -27,8 +27,10 @@ button {
 }
 
 .wrap {
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .header {
@@ -36,6 +38,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -69,6 +75,7 @@ button {
     border-radius: 12px;
     background: linear-gradient(100deg,#f33a00,#ffb608);
     box-shadow: 0 0 24px #ff510039;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -92,14 +99,17 @@ button {
 }
 
 .hero {
-    height: 430px;
+    min-height: 430px;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
+    padding: 30px 0;
 }
 
 .hero-copy {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     position: relative;
     z-index: 1;
 }
@@ -128,7 +138,8 @@ h2 {
 }
 
 .hero p {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     font-size: 13px;
     line-height: 1.6;
     color: #c4b0a0;
@@ -159,7 +170,8 @@ h2 {
 }
 
 .hero-button {
-    width: 345px;
+    width: 100%;
+    max-width: 345px;
     margin-top: 15px;
 }
 
@@ -197,7 +209,8 @@ h2 {
 }
 
 .store {
-    width: 918px;
+    width: 100%;
+    max-width: 918px;
     margin: auto;
     padding: 18px;
     border-radius: 20px;
@@ -208,7 +221,9 @@ h2 {
 .tabs {
     display: flex;
     gap: 7px;
-    margin: 0 0 20px 187px;
+    margin: 0 0 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tab {
@@ -227,6 +242,7 @@ h2 {
 .store-body {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .store-preview {
@@ -247,9 +263,10 @@ h4 {
 }
 
 .store-preview img {
-    width: 175px;
+    width: 100%;
+    max-width: 175px;
     height: auto;
-    margin-left: -4px;
+    margin: 0 auto;
 }
 
 .preview-container {
@@ -328,6 +345,7 @@ h4 {
 
 .product-column {
     width: 258px;
+    flex: 1 1 258px;
 }
 
 .column-heading {
@@ -370,6 +388,7 @@ h4 {
 
 .description-column {
     width: 398px;
+    flex: 1 1 398px;
     padding: 0 5px 18px 4px;
     background: #210f05;
     border-radius: 10px;
@@ -420,7 +439,8 @@ h4 {
 .description-column .orange {
     display: block;
     margin: 0 20px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .fineprint {
@@ -450,6 +470,7 @@ h4 {
 .news-card img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
 .news-copy {
@@ -502,6 +523,7 @@ h4 {
     gap: 35px;
     padding: 55px 0 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .small-logo {
@@ -513,6 +535,7 @@ h4 {
     gap: 20px;
     font-size: 11px;
     color: #9a7f64;
+    flex-wrap: wrap;
 }
 
 .footer p {
@@ -534,12 +557,14 @@ h4 {
     color: #a58b76;
     font-size: 12px;
     margin: auto auto 25px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     line-height: 1.8;
 }
 
 .rules-list {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -576,7 +601,8 @@ h4 {
 }
 
 .bottom-help {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 45px auto;
     padding: 25px;
     background: #261407;
@@ -616,7 +642,9 @@ h4 {
 
 .reward-card img {
     display: block;
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
     margin: auto;
 }
 
@@ -643,10 +671,13 @@ h4 {
     background: #2b170b;
     border-radius: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .reward-banner img {
-    width: 140px;
+    width: 100%;
+    max-width: 140px;
+    height: auto;
 }
 
 .reward-banner p {
@@ -662,10 +693,13 @@ h4 {
 .guide-layout {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .guide-steps {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    flex: 1 1 600px;
 }
 
 .guide-step {
@@ -696,9 +730,10 @@ h4 {
 }
 
 .guide-player {
-    width: 250px;
-    height: 375px;
-    margin-top: 35px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 35px auto;
 }
 
 .guide-note {
@@ -730,10 +765,13 @@ h4 {
     background: #291509;
     padding: 15px 35px;
     border-radius: 16px;
+    flex-wrap: wrap;
 }
 
 .news-wide img {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
 }
 
 .news-wide p {
@@ -748,8 +786,10 @@ h4 {
 }
 
 .article-page {
-    width: 850px;
-    padding: 30px 0;
+    width: 100%;
+    max-width: 850px;
+    padding: 30px 16px;
+    margin: 0 auto;
 }
 
 .breadcrumbs {
@@ -769,13 +809,16 @@ h4 {
 }
 
 .article-cover {
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
     border-radius: 12px;
     margin-top: 20px;
 }
 
 .article-body {
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
     margin: 30px auto;
     font-size: 14px;
     line-height: 1.9;
@@ -789,7 +832,9 @@ h4 {
 }
 
 .article-body img {
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
+    height: auto;
     margin: 20px 0;
 }
 
@@ -798,6 +843,8 @@ h4 {
     justify-content: space-between;
     color: #f8961e;
     font-size: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .overlay {
@@ -808,6 +855,7 @@ h4 {
     display: none;
     align-items: center;
     justify-content: center;
+    padding: 16px;
 }
 
 .overlay.visible {
@@ -815,7 +863,8 @@ h4 {
 }
 
 .modal {
-    width: 470px;
+    width: 100%;
+    max-width: 470px;
     padding: 40px;
     border-radius: 15px;
     background: #2b180c;
@@ -880,10 +929,17 @@ h4 {
 }
 
 .news-wide>img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     max-height: 300px;
     object-fit: contain;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a:focus-visible,
 button:focus-visible,
 .tab:focus-visible,
@@ -898,4 +954,195 @@ button:focus-visible,
 a:focus:not(:focus-visible),
 button:focus:not(:focus-visible) {
     outline: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+    
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    
+    .header-note {
+        display: none;
+    }
+    
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: auto;
+        padding: 20px 0;
+    }
+    
+    .hero-copy {
+        max-width: 100%;
+    }
+    
+    .hero-copy h1 {
+        font-size: 28px;
+        line-height: 1.1;
+    }
+    
+    .hero p {
+        max-width: 100%;
+    }
+    
+    .hero-button {
+        width: 100%;
+    }
+    
+    .hero-button span {
+        margin-left: 0;
+        float: right;
+    }
+    
+    .hero-players {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .hero-players img {
+        position: relative;
+        width: 80%;
+        height: auto;
+        display: inline-block;
+    }
+    
+    .hero-back, .hero-front {
+        position: static;
+        left: auto;
+        top: auto;
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .inner-page {
+        padding: 15px 16px 55px;
+    }
+    
+    .store-body {
+        flex-direction: column;
+    }
+    
+    .store-preview,
+    .product-column,
+    .description-column {
+        width: 100%;
+        flex: none;
+    }
+    
+    .description-column .orange {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Сетки */
+    .news-grid,
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-wide {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .reward-banner {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .guide-layout {
+        flex-direction: column;
+    }
+    
+    .guide-steps {
+        width: 100%;
+        flex: none;
+    }
+    
+    .guide-player {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .article-page {
+        padding: 20px 16px;
+    }
+    
+    .article-page h1,
+    .article-page h2 {
+        font-size: 24px;
+    }
+    
+    .article-body {
+        font-size: 14px;
+    }
+    
+    .article-body h4 {
+        font-size: 18px;
+    }
+    
+    .rules-intro,
+    .rules-list,
+    .bottom-help {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-copy h1 {
+        font-size: 24px;
+    }
+    
+    .store-preview img {
+        max-width: 140px;
+    }
+    
+    .preview-container {
+        width: 100%;
+        max-width: 160px;
+    }
+    
+    .preview-nickname {
+        font-size: 12px;
+        padding: 2px 8px;
+    }
+    
+    .tabs {
+        gap: 4px;
+    }
+    
+    .tab {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
 }
