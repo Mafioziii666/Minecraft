@@ -12,7 +12,6 @@ body {
     background: #1e1006;
     font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 14px;
-    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
 }
 
 a {
@@ -957,20 +956,17 @@ button:focus:not(:focus-visible) {
     outline: none;
 }
 
-
 @media (max-width: 768px) {
     .header {
         height: auto;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
         padding: 15px 0;
     }
     
     .nav {
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
     }
     
     .nav a {
@@ -984,32 +980,26 @@ button:focus:not(:focus-visible) {
     
     .hero {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
         min-height: auto;
         padding: 20px 0;
     }
     
     .hero-copy {
         max-width: 100%;
-        width: 100%;
     }
     
     .hero-copy h1 {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.1;
-        margin: 15px 0;
     }
     
     .hero p {
         max-width: 100%;
-        margin: 0 auto 15px;
     }
     
     .hero-button {
         width: 100%;
-        max-width: 345px;
-        margin: 0 auto;
     }
     
     .hero-button span {
@@ -1019,22 +1009,19 @@ button:focus:not(:focus-visible) {
     
     .hero-players {
         position: relative;
-        left: auto;
-        top: auto;
+        left: 0;
+        top: 0;
         width: 100%;
         height: auto;
-        margin-top: 30px;
+        margin-top: 20px;
         text-align: center;
     }
     
     .hero-players img {
-        position: static;
-        width: 45%;
-        max-width: 180px;
+        position: relative;
+        width: 80%;
         height: auto;
         display: inline-block;
-        vertical-align: bottom;
-        margin: 0 5px;
     }
     
     .hero-back, .hero-front {
@@ -1042,6 +1029,7 @@ button:focus:not(:focus-visible) {
         left: auto;
         top: auto;
         height: auto;
+        margin: 0 5px;
     }
     
     .section-title h2 {
@@ -1054,14 +1042,12 @@ button:focus:not(:focus-visible) {
     
     .store-body {
         flex-direction: column;
-        align-items: center;
     }
     
     .store-preview,
     .product-column,
     .description-column {
         width: 100%;
-        max-width: 100%;
         flex: none;
     }
     
@@ -1070,7 +1056,6 @@ button:focus:not(:focus-visible) {
         max-width: none;
     }
     
-    /* Сетки */
     .news-grid,
     .rewards-grid {
         grid-template-columns: 1fr;
@@ -1080,7 +1065,6 @@ button:focus:not(:focus-visible) {
         flex-direction: column;
         padding: 20px;
         gap: 20px;
-        text-align: center;
     }
     
     .reward-banner {
@@ -1091,8 +1075,6 @@ button:focus:not(:focus-visible) {
     
     .guide-layout {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
     
     .guide-steps {
@@ -1102,18 +1084,13 @@ button:focus:not(:focus-visible) {
     
     .guide-player {
         max-width: 200px;
-        margin: 20px auto;
+        margin: 0 auto;
     }
     
     .footer {
         flex-direction: column;
         gap: 15px;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-links {
-        justify-content: center;
+        align-items: flex-start;
     }
     
     .article-page {
@@ -1140,15 +1117,9 @@ button:focus:not(:focus-visible) {
     }
 }
 
-
 @media (max-width: 390px) {
     .hero-copy h1 {
-        font-size: 26px;
-    }
-    
-    .hero-players img {
-        width: 42%;
-        max-width: 160px;
+        font-size: 24px;
     }
     
     .store-preview img {
