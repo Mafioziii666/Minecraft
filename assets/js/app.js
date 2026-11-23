@@ -54,7 +54,11 @@ if (nickEl) {
     : '<li>Выбранный набор — <span>' + product.name + '</span></li><li>Описание игровой коллекции</li><li>Содержимое можно посмотреть в каталоге</li>';
   document.getElementById('product-description').innerHTML = '<ul>' + details + '</ul>';
   
-  document.getElementById('choose-product').textContent = 'Выбрать за ' + product.price + ' ₽';
+var currentPrice = product.price;
+if (selectedTerm === 'Навсегда') {
+  currentPrice = product.price * 5;
+}
+document.getElementById('choose-product').textContent = 'Выбрать за ' + currentPrice + ' ₽';
 }
 
 function setCategory(category) {
